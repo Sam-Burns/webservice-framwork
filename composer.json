@@ -18,9 +18,8 @@
     },
 
     "autoload": {
-        "psr-0": {
-            "KataApiSdk\\": "sample-application/src-sdk/",
-            "KataApi\\": "sample-application/src-api/"
+        "psr-4": {
+            "UltraLite\\WebserviceFramework\\": "src/",
         }
     }
 }
