@@ -1,0 +1,21 @@
+default:
+
+    autoload:
+        - %paths.base%/context_files/
+
+    suites:
+
+        applicationlevel:
+            paths:    [ %paths.base%/feature_files/ ]
+            filters:  { tags: '@applicationlevel' }
+            contexts: [ \KataApi\Behat\RememberingPeople\ApplicationContext ]
+
+        servicelevel:
+            paths:    [ %paths.base%/feature_files/ ]
+            filters:  { tags: '@servicelevel' }
+            contexts: [ \KataApi\Behat\RememberingPeople\ServiceContext ]
+
+        httplevel:
+            paths:    [ %paths.base%/feature_files/ ]
+            filters:  { tags: '@httplevel' }
+            contexts: [ \KataApi\Behat\RememberingPeople\HttpContext ]

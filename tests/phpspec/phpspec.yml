@@ -1,0 +1,13 @@
+suites:
+
+    api:
+        namespace:   KataApi
+        spec_prefix: KataApiSpec
+        src_path:    src-api/
+        spec_path:   tests/phpspec/KataApiSpec
+
+    sdk:
+        namespace:   KataApiSdk
+        spec_prefix: KataApiSdkSpec
+        src_path:    src-sdk/
+        spec_path:   tests/phpspec/KataApiSdkSpec
